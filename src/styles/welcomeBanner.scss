@@ -1,0 +1,89 @@
+.welcome-banner-container {
+    margin-top: 68px;
+    margin-left: 25px;
+    margin-right: 25px;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width: 1023px) {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+    .image-container {
+        .banner-image {
+            width: 100%;
+        }
+    }
+
+    .banner-text {
+        position: absolute;
+        width: 27%;
+        color: white;
+        margin-left: 85px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: left;
+
+        @media screen and (max-width: 1023px) {
+            width: 100%;
+            margin-left: 10px;
+            text-align: left;
+        }
+
+        .title {
+            font: normal normal 900 56px/62px Chronicle Display;
+            font-weight: 400;
+            margin: 0;
+
+            @media screen and (max-width: 1023px) {
+                font-size: 40px;
+                line-height: normal;
+            }
+        }
+
+        .subtitle {
+            font: normal normal normal 20px/28px HvDTrial Brandon Grotesque;
+            font-weight: 300;
+            margin-bottom: 0;
+
+            @media screen and (max-width: 769px) {
+                display: none;
+            }
+
+            @media screen and (min-width: 769px) and (max-width: 1023px) {
+                font-size: 16px;
+                line-height: 22px;
+                width: 40%;
+            }
+        }
+
+
+        .get-started {
+            width: 180px;
+            height: 50px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border-radius: 6px;
+            border: 0;
+            color: #004A4C;
+            font: normal normal normal 20px/28px HvDTrial Brandon Grotesque;
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            @media screen and (max-width: 1023px) {
+                margin-top: 5px;
+                width: 130px;
+                height: 30px;
+            }
+
+            &:hover {
+                background: #004A4C;
+                color: white;
+            }
+        }
+    }
+}

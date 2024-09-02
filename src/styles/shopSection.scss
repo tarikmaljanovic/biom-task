@@ -1,0 +1,135 @@
+.shop-section-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+
+
+    .biom-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+        @media screen and (max-width: 1100px) {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            object-fit: cover;
+            object-position: 30% 0%;
+            transform: scaleX(-1);
+        }
+    }
+
+    .sliding-text {
+        position: absolute;
+        left: 0;
+        font-size: 180px;
+        z-index: -1;
+        color: #eeeeee;
+        font-family: 'HvDTrial Brandon Grotesque';
+        font-weight: 800;
+
+        @media screen and (max-width: 1100px) {
+            display: none;
+        }
+
+    }
+
+    .sliding-text-mobile {
+        display: none;
+
+        @media screen and (max-width: 1100px) {
+            display: block;
+            position: absolute;
+            left: 0;
+            font-size: 120px;
+            z-index: -1;
+            color: #eeeeee;
+            font-family: 'HvDTrial Brandon Grotesque';
+            font-weight: 800;
+            width: 100%;
+        }
+    }
+
+    .shop-section-text {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(0%, -50%);
+        text-align: left;
+
+        @media screen and (max-width: 1100px) {
+            position: relative;
+            width: 100%;
+            transform: translate(0%, 0%);
+            left: 0;
+            top: 0;
+            padding: 100px 20px;
+        }
+
+        .subtitle {
+            text-align: left;
+            font: normal normal normal 14px/62px HvDTrial Brandon Grotesque;
+            letter-spacing: 2.1px;
+            color: #002D33;
+            text-transform: uppercase;
+            line-height: 10px;
+        }
+
+        .title {
+            font: normal normal 900 36px/62px Chronicle Display;
+            color: #002D33;
+            margin: 0;
+        }
+
+        .text {
+            font-family:  HvDTrial Brandon Grotesque;
+            color: #002D33;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            .icon {
+                width: 30px;
+                height: 30px;
+                background: #004A4C 0% 0% no-repeat padding-box;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+            }
+
+            .feature-description {
+                font-family:  'HvDTrial Brandon Grotesque';
+                color: #002D33;
+                margin-left: 22px;
+            }
+        }
+        
+        .shop-now {
+            width: 163px;
+            height: 50px;
+            background: #004A4C 0% 0% no-repeat padding-box;
+            border-radius: 6px;
+            border: none;
+            padding: 12px 20px;
+            color: white;
+            font: normal normal 900 13px/30px HvDTrial Brandon Grotesque;
+            margin-top: 42px;
+            transition: 0.3s ease;
+            cursor: pointer;
+
+            &:hover {
+                background: #002D33;
+                transition: 0.3s ease;
+            }
+        }
+    }
+}
