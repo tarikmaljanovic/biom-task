@@ -1,0 +1,78 @@
+.carousel-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 50px 0;
+    overflow: scroll;
+
+    :not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .carousel-image-container {
+        width: 535px;
+        height: 415px;
+        overflow: hidden;
+        border-radius: 14px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        @media screen and (max-width: 768px) {
+            width: 300px;
+            height: 315px;
+        }
+
+
+        &:hover {
+            .carousel-text {
+                opacity: 1;
+            }
+        }
+
+        .carousel-image {
+            width: auto;
+            height: auto;
+            display: block;
+        }
+        
+        .carousel-text {
+            position: absolute;
+            color: yellow;
+            font-size: 25px;
+            font-family: 'Chronicle Display';
+            font-weight: 400;
+            color: white;
+            opacity: 0;
+            transition: all 0.5s;
+        }
+    }
+
+    .text-container {
+        display: flex;
+        position: absolute;
+        align-self: center;
+        justify-self: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+        .subtitle {
+            text-align: center;
+            font: normal normal normal 16px/23px HvDTrial Brandon Grotesque;
+            letter-spacing: 2.4px;
+            color: #FFFFFF;
+        }
+
+        .title {
+            text-align: center;
+            font: normal normal 900 78px/82px Chronicle Display;
+            letter-spacing: -0.78px;
+            color: #FFFFFF;
+            margin: 0;
+        }
+    }
+    
+}

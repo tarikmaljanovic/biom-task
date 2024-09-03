@@ -28,7 +28,7 @@ export default function ShopSection() {
                 style={{
                     rotate: -90,
                     y: yMobile,
-                    x: -200,
+                    x: -350,
                 }}
             >meet biom</motion.p>
             <img src={biom} className='biom-image'/>
