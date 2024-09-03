@@ -9,7 +9,7 @@ export default function ShopSection() {
     const {scrollYProgress} = useScroll()
 
     const y = useTransform(scrollYProgress, [0, 1], [100, -200])
-    const yMobile = useTransform(scrollYProgress, [0, 1], [100, -600])
+    const yMobile = useTransform(scrollYProgress, [0, 1], [0, -2000])
 
     return (
         <div className='shop-section-container'>

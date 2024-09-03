@@ -1,0 +1,52 @@
+.feedback-section {
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 1023px) {
+        padding: 30px;
+        
+    }
+
+    .subtitle {
+        color: #002D33;
+        font-family: 'HvDTrial Brandon Grotesque';
+        text-align: center;
+    }
+
+    .feedback-content {
+        text-align: center;
+        color: #002D33;
+        width: 70%;
+
+        @media screen and (max-width: 1023px) {
+            width: 100%;
+            font-size: 25px;;
+        }
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 50px;
+
+        .pagination-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid #004A4C;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: #004A4C;
+        }
+    }
+}
