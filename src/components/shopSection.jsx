@@ -4,12 +4,14 @@ import beautifulDesign from '../assets/beautiful design icon.png'
 import durable from '../assets/durable stainless icon.png'
 import nonToxic from '../assets/non toxic icon.png'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { useEffect } from 'react';
 
 export default function ShopSection() {
     const {scrollYProgress} = useScroll()
+    
+    const y = useTransform(scrollYProgress, [0, 0.2], [200, -300])
+    const yMobile = useTransform(scrollYProgress, [0, 0.2], [-200, -400])
 
-    const y = useTransform(scrollYProgress, [0, 1], [100, -200])
-    const yMobile = useTransform(scrollYProgress, [0, 1], [0, -2000])
 
     return (
         <div className='shop-section-container'>

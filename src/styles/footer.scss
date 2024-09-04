@@ -75,6 +75,10 @@
                     width: 80%;
                     padding: 10px;
                     font-family: 'HvDTrial Brandon Grotesque';
+
+                    &:focus-visible {
+                        outline: none;
+                    }
                 }
 
                 button {
@@ -83,8 +87,19 @@
                     height: 38px;
                     width: 44px;
                     border-radius: 6px;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
                     svg {
                         color: white;
+                        transition: all 0.3s ease;
+                    }
+
+                    &:hover {
+                        background-color: #00363A;
+
+                        svg {
+                            transform: translateX(2px);
+                        }
                     }
                 }
             }

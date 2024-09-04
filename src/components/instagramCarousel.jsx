@@ -6,12 +6,15 @@ import img4 from '/instagram_images/Green-Gold-and-Navy-Living_Kitty-and-B-by-Ka
 import img5 from '/instagram_images/Biom fn .23.png'
 import img6 from '/instagram_images/AdobeStock_334130078_Preview.png'
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { useScroll, useTransform, motion } from 'framer-motion';
 
 export default function InstagramCarousel() {
+
     return (
         <div className="instagram-carousel">
             <h1 className='title'>#cleanwithbiom</h1>
-            <div className='carousel-container'>
+            <motion.div
+                className='carousel-container'>
                 <div className='carousel'>
                     <div className='img-container'>
                         <img src={img1} alt='img1' />
@@ -32,7 +35,7 @@ export default function InstagramCarousel() {
                         <img src={img6} alt='img6' />
                     </div>
                 </div>
-            </div>
+            </motion.div>
             <div className='section-button'>
                 <span className='button-text'>FOLLOW US ON INSTAGRAM</span>
                 <div className='icon-container'>
