@@ -1,0 +1,131 @@
+.wipes-section {
+    margin: 120px 69px;
+    position: relative;
+    display: flex;
+    max-width: 1640px;
+
+    @media screen and (max-width: 1100px) {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin: 60px 20px;
+        
+    }
+
+    .background {
+        width: 70%;
+        border-radius: 12px;
+        right: 0;
+        height: 100%;
+        position: absolute;
+        background-color: #DAE5E5;
+        z-index: -1;
+
+        @media screen and (max-width: 1100px) {
+            width: 100%;
+            
+        }
+    }
+
+    .image-container {
+        position: relative;
+        width: 50%;
+        transform: translateY(-10%);
+
+        @media screen and (max-width: 1100px) {
+            transform: translateY(0%);
+            width: auto;
+        }
+
+        .back-image {
+            position: relative;
+            z-index: 0;
+
+            @media screen  and (max-width: 1100px) {
+                display: none;
+            }
+
+        }
+
+        .front-image {
+            position: absolute;
+            z-index: 1;
+            transform: translate(-50%, 90%);
+
+            @media screen and (min-width: 1100px) and (max-width: 1360px) {
+                transform: translate(-90%, 90%);
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1100px) {
+                transform: translate(-130%, 60%);
+            }
+
+            @media screen and (max-width: 768px) {
+                display: none;   
+            }
+        }
+    }
+
+    .text-container {
+        width: 50%;
+        padding: 45px;
+        position: relative;
+
+        @media screen and (max-width: 1100px) {
+            width: 100%;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            font-weight: 500;
+            color: #002D33;
+            font-family: 'HvDTrial Brandon Grotesque';
+            letter-spacing: 2.1px;
+            text-transform: uppercase;
+            line-height: 10px;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: 900;
+            font-family: 'Chronicle Display';
+            margin: 0;
+        }
+        .text {
+            color: #002D33;
+            font-family: 'HvDTrial Brandon Grotesque';
+        }
+        .list {
+            margin-top: 50px;
+            .list-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 35px;
+
+                .item-text {
+                    margin-left: 20px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #000000;
+                    font-family: 'HvDTrial Brandon Grotesque';
+                    font-weight: 400;
+                }
+            }
+        }
+        .subscribe-button {
+            position: absolute;
+            width: 207px;
+            height: 50px;
+            background-color: #004A4C;
+            border: 0;
+            color: white;
+            border-radius: 6px;
+            font-family: 'HvDTrial Brandon Grotesque';
+            font-weight: 500;
+            bottom: -25px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #002D33;
+            }
+        }
+    }
+}

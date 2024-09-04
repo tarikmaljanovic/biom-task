@@ -1,0 +1,59 @@
+.video-section {
+    max-width: 2640px;
+    margin: 0 25px;
+    position: relative;
+
+    @media screen and (max-width: 769px) {
+        margin: 0;
+        padding: 40px 0;
+        background-color: #004A4C;
+    }
+
+    .video {
+        width: 100%;
+        border-radius: 14px;
+
+        @media screen and (max-width: 769px) {
+            border-radius: 0;
+        }
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+
+        @media screen and (max-width: 769px) {
+            width: 100%;
+            padding: 0 10px;
+            transform: translate(-50%, -43%);
+        }
+
+        .subtitle  {
+            font-family:  'HvDTrial Brandon Grotesque';
+            letter-spacing: 2.1px;
+        }
+
+        .title {
+            font-family: 'Chronicle Display';
+        }
+
+        .text {
+            font-family:  'HvDTrial Brandon Grotesque'; 
+        }
+
+        .overlay-bttn {
+            width: 171px;
+            height: 52px;
+            font-family: 'HvDTrial Brandon Grotesque';
+            font-weight: 600;
+            color: #004A4C;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

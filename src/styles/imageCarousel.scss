@@ -4,6 +4,7 @@
     grid-template-columns: auto auto auto auto;
     margin: 50px 0;
     overflow: scroll;
+    max-width: 1640px;
 
     :not(:last-child) {
         margin-right: 20px;

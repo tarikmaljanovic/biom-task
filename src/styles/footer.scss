@@ -1,0 +1,170 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .background {
+        position: absolute;
+        background-color: #507c7c;
+        width: 100%;
+        height: 75%;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .footer-container {
+        max-width: 1640px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        .newsletter {
+            background-image: url('/Biom_wipe_2.png');
+            background-color: #F2F2F2;
+            border-radius: 14px;
+            height: 300px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px 111px;
+
+            @media screen and (max-width: 768px) {
+                padding: 30px 20px;
+                
+            }
+
+            .title {
+                font-family: 'Chronicle Display';
+
+                @media screen and (max-width: 768px) {
+                    font-size: 24px;
+                    
+                }
+            }
+
+            .text {
+                font-family: 'HvDTrial Brandon Grotesque';
+
+                @media screen and (max-width: 768px) {
+                    font-size: 14px;   
+                }
+            }
+
+            .input-container {
+                width: 414px;
+                height: 52px;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 6px;
+                padding: 0 10px;
+
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
+
+                input {
+                    border: none;
+                    height: 100%;
+                    width: 80%;
+                    padding: 10px;
+                    font-family: 'HvDTrial Brandon Grotesque';
+                }
+
+                button {
+                    border: none;
+                    background-color: #004A4C;
+                    height: 38px;
+                    width: 44px;
+                    border-radius: 6px;
+                    svg {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-evenly;
+            width: 90%;
+            padding: 50px 0;
+            border-bottom: #004A4C 2px solid;
+
+            @media screen and (max-width: 768px) {
+                padding: 25px 0;
+                width: 100%;
+            }
+
+            .nav-items {
+                display: flex;
+                flex-direction: row;
+
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                    align-items: center;
+                    
+                }
+
+                .nav-item {
+                    font-family: 'HvDTrial Brandon Grotesque';
+                    color: white;
+                    margin: 0px 30px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+
+                    @media screen and (min-width: 769px) and (max-width: 1024px) {
+                        margin: 0px 20px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+
+        .socials {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            padding: 50px 0;
+
+            .copyright {
+                font-family: 'HvDTrial Brandon Grotesque';
+                color: white;
+                font-weight: 300;
+            }
+
+            .social-icons {
+                display: flex;
+                flex-direction: row;
+                    
+                .icon-container {
+                    margin: 0px 5px;
+                    cursor: pointer;
+                    background-color: white;
+                    border-radius: 50%;
+                    padding: 4px;
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .icon {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

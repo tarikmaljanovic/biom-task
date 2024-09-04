@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    max-width: 1640px;
 
     @media screen and (max-width: 1439px) {
         flex-direction: column;
@@ -53,10 +54,6 @@
                 justify-content: center;
                 align-items: center;
                 padding-right: 10px;
-            }
-
-            @media screen and (max-width: 1439px) {
-                
             }
         }
     }

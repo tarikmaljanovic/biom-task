@@ -2,8 +2,7 @@
 @import url('https://fonts.cdnfonts.com/css/chronicle-display');
 
 * {
-  box-sizing: border-box;
-                                                
+  box-sizing: border-box;                               
 }
 
 body {
@@ -12,4 +11,11 @@ body {
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
