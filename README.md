@@ -1,4 +1,4 @@
-# React + Vite
+# Biom
 
 ## Running the site
 
