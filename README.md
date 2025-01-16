@@ -1,25 +1,25 @@
 # Biom
 
-## Running the site
+![Screenshot 2025-01-16 at 01 14 12](https://github.com/user-attachments/assets/ef9d0d83-7c2c-4131-ba8b-9b4ceedd68fb)
 
-1. Clone the repository to your machine using the following command in your terminal/command prompt: ```git clone https://github.com/tarikmaljanovic/biom-task.git```
-2. Go to the directory in your terminal/command prompt (```cd biom-task```), or open the project folder in your IDE
-3. Install all the dependencies by running the following command: ```npm i```
-4. Once all the dependencies are installed, run the following command: ```npm run dev```
-5. The site can be found at ```http://localhost:5173/``` (Vite's default port)
+![Screenshot 2025-01-16 at 01 14 16](https://github.com/user-attachments/assets/bc14a935-d68a-43de-a8e0-8b841940c910)
 
-## Tech Stack
+![Screenshot 2025-01-16 at 01 14 33](https://github.com/user-attachments/assets/e3e2e767-6e6a-41f1-b161-f441ced4c0ae)
 
-1. React (Vite.js)
-2. Framer Motion
-3. SASS
-4. Material UI
+![Screenshot 2025-01-16 at 01 14 39](https://github.com/user-attachments/assets/ae6fc547-0e56-484e-a40f-08435d9d102c)
 
-## Development Process
+![Screenshot 2025-01-16 at 01 14 44](https://github.com/user-attachments/assets/2e96bbf4-21a4-4e44-841c-04aa467ad9b5)
 
-I started out with the project by analysing the design and dividing it into components, starting from the navigation bar and ending with the footer. Each component was implemented and styled one by one by creating the desktop design,
-coding the behaviour and then dealing with responsiveness. I enjoyed implementing the animations and playing with tools provided by framer motion to create animations that would be otherwise long and difficult to develop. However, dealing
-with images, their positioning in different viewport dimentions and comming up with mobile and tablet designs was less interesting. The only issue I faced was with the scrolling of the images above the footer where the images didn't scroll
-horizontally. The approach was to manipulate the ```scrollLeft``` property of the contanier by using its reference through the ```useRef``` hook. However, it never worked on the first render. Estimately, it took 2 days to complete the project.
+![Screenshot 2025-01-16 at 01 14 49](https://github.com/user-attachments/assets/c4ca151d-752b-4969-9c77-7cf490ee4dea)
 
+![Screenshot 2025-01-16 at 01 14 52](https://github.com/user-attachments/assets/86665bd4-8a73-40de-bfaa-23825bb7d8f1)
 
+![Screenshot 2025-01-16 at 01 15 11](https://github.com/user-attachments/assets/12206fa1-b65f-44aa-afc7-e014f5bb528a)
+
+![Screenshot 2025-01-16 at 01 15 28](https://github.com/user-attachments/assets/199f1f9d-2ef7-4439-b492-2b54b1e03e6b)
+
+![Screenshot 2025-01-16 at 01 15 36](https://github.com/user-attachments/assets/665c4dbb-ee16-497d-876f-4ccee7fb7437)
+
+![Screenshot 2025-01-16 at 01 15 40](https://github.com/user-attachments/assets/ad9e16f9-c35a-4711-9747-50abeb1dc189)
+
+![Screenshot 2025-01-16 at 01 15 46](https://github.com/user-attachments/assets/8a0cb3d9-ed7d-473f-b921-63a5213d9a75)
